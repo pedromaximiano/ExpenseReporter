@@ -866,6 +866,7 @@
     <Content Include="SpecRunner.html" />
     <Content Include="spec\expensesControllerSpec.js" />
     <Content Include="spec\expensesDataServiceSpec.js" />
+    <Content Include="spec\persistingExpensesSpec.js" />
     <Content Include="spec\SpecHelper.js" />
     <Content Include="src\app\admin\admin.html" />
     <Content Include="src\app\app.js" />

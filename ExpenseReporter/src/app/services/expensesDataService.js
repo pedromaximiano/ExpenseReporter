@@ -13,8 +13,23 @@
         }
 
         var services = {
-            getExpenses: getExpenses
+            getExpenses: getExpenses,
+            persistExpenses: persistExpenses
         };
+        
+        function reportExpenses() {
+            // do some work
+        }
+        
+        function persistExpenses(reportExpenses) {
+            // do some work to persist data
+
+            var success = true;
+            
+            if (success && typeof (reportExpenses) === 'function') {
+                reportExpenses();
+            }
+        }
 
         return services;
     }
