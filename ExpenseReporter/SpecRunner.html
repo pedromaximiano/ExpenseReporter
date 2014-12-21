@@ -2,20 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
-    <link href="css/jasmine.css" rel="stylesheet" />   
-    
+    <link href="css/jasmine.css" rel="stylesheet" />
+
     <script src="Scripts/jasmine.js"></script>
     <script src="Scripts/jasmine-html.js"></script>
-    <script src="src/js/boot.js"></script>  
-    <script src="Scripts/angular.js"></script>    
-    <script src="Scripts/angular-mocks.js"></script>    
-    
-    <!-- include source files here --> 
-    <script src="src/app/Expense/Expense.js"></script>
-    <script src="src/app/Expense/ExpenseItem.js"></script>>
-    
+    <script src="src/js/boot.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-mocks.js"></script>
+
+    <!-- include source files here -->
+    <script src="src/app/app.js"></script>
+    <script src="src/app/expense/ExpenseItem.js"></script>
+    <script src="src/app/expense/expensesController.js"></script>
+    <script src="src/app/services/expensesDataService.js"></script>
+
     <!-- include spec files here -->
-    <script src="spec/ExpenseSpec.js"></script>
+    <script src="spec/SpecHelper.js"></script>
+    <script src="spec/expensesControllerSpec.js"></script>
+    <script src="spec/expensesDataServiceSpec.js"></script>
 </head>
 <body>
 

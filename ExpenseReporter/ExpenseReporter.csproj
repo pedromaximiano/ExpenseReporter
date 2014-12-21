@@ -864,9 +864,16 @@
     <Content Include="Scripts\jquery-1.9.0.min.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="SpecRunner.html" />
-    <Content Include="spec\ExpenseSpec.js" />
-    <Content Include="src\app\Expense\Expense.js" />
-    <Content Include="src\app\Expense\ExpenseItem.js" />
+    <Content Include="spec\expensesControllerSpec.js" />
+    <Content Include="spec\expensesDataServiceSpec.js" />
+    <Content Include="spec\SpecHelper.js" />
+    <Content Include="src\app\admin\admin.html" />
+    <Content Include="src\app\app.js" />
+    <Content Include="src\app\expense\expense.html" />
+    <Content Include="src\app\expense\expensesController.js" />
+    <Content Include="src\app\expense\ExpenseItem.js" />
+    <Content Include="src\app\layout\topnav.html" />
+    <Content Include="src\app\services\expensesDataService.js" />
     <Content Include="src\index.html" />
     <Content Include="src\js\boot.js" />
     <Content Include="Web.config" />
@@ -875,7 +882,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

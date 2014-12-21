@@ -1,9 +1,28 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
 <head>
-    <title></title>
+    <title>Expenses</title> 
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body { margin-top: 50px;}
+    </style>
 </head>
-<body>
+<body class="container">
+    <div ng-include="'app/layout/topnav.html'">
+    </div>                               
+    
+    <div>
+        <div ng-view>
+            
+        </div>
+    </div>
 
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/angular-route.min.js"></script>
+    
+    <script src="app/app.js"></script> 
+    <script src="app/expense/expensesController.js"></script>
+    <script src="app/expense/ExpenseItem.js"></script>
+    <script src="app/services/expensesDataService.js"></script>
 </body>
 </html>
